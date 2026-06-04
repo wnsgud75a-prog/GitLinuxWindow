@@ -10,7 +10,6 @@
 ![MariaDB](https://img.shields.io/badge/MariaDB-Database-003545?style=for-the-badge&logo=mariadb&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST_API-Service-FF6F00?style=for-the-badge)
 ![Whisper STT](https://img.shields.io/badge/Whisper-STT-412991?style=for-the-badge)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-AI-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![PyTorch](https://img.shields.io/badge/PyTorch-AI_Framework-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 
 ### 모델 기반 음성 데이터 활용 인지능력 검사 및 훈련 제공 서비스
