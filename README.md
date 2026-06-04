@@ -11,7 +11,7 @@
 ![REST API](https://img.shields.io/badge/REST_API-Service-FF6F00?style=for-the-badge)
 ![Whisper STT](https://img.shields.io/badge/Whisper-STT-412991?style=for-the-badge)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-AI-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![PyTorch](https://img.shields.io/badge/PyTorch-Deep_Learning-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-AI_Framework-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 
 ### 모델 기반 음성 데이터 활용 인지능력 검사 및 훈련 제공 서비스
 
@@ -282,24 +282,24 @@
 ## 👥 팀원 역할
 
 ### 배주형
-- PM
-- Front-end
-- Back-end
+- 프로젝트 총괄(PM)
+- 프론트엔드 개발
+- 백엔드 개발
 
 ### 양선호
-- Back-end
-- Data Modeling
+- 백엔드 개발
+- 데이터 모델링 및 데이터 구조 설계
 
 ### 문산정
-- Front-end
-- Back-end
-- Data Modeling
+- 프론트엔드 개발
+- 백엔드 개발
+- 데이터 모델링
 
 ### 문세희
-- Front-end
+- 프론트엔드 개발
 
 ### 박준형
-- Back-end
+- 백엔드 개발
 
 ---
 
