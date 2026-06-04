@@ -3,6 +3,8 @@
 ![Java](https://img.shields.io/badge/Java-21-007396?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-4.0.6-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-Template-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-Markup-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Style-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-Frontend-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-Data_Analysis-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![MariaDB](https://img.shields.io/badge/MariaDB-Database-003545?style=for-the-badge&logo=mariadb&logoColor=white)
@@ -28,7 +30,7 @@
 - [🚀 기대 효과](#-기대-효과)
 - [🛠️ 기술 스택](#️-기술-스택)
 - [⚙️ Spring Boot 초기 환경설정](#️-spring-boot-초기-환경설정)
-- [🧠 분석 로직](#-분석-로직)
+- [🧠 데이터 처리 및 음성 분석](#-데이터-처리-및-음성-분석)
 - [📁 데이터 구성](#-데이터-구성)
 - [🗂️ 개발 방법 및 전략](#️-개발-방법-및-전략)
 - [🧪 데이터 확보 방안](#-데이터-확보-방안)
@@ -147,7 +149,7 @@
 ## 🛠️ 기술 스택
 
 - **Backend**: Java, Spring Boot, REST API
-- **Frontend**: Thymeleaf, HTML, CSS, JavaScript
+- **Frontend**: Thymeleaf, HTML5, CSS3, JavaScript
 - **Database**: MariaDB
 - **AI / STT**: Whisper STT, Hugging Face Transformers, PyTorch
 - **Data Processing**: Python, pandas, KoNLPy, Kiwi, 정규표현식
@@ -185,14 +187,33 @@
 
 ---
 
-## 🧠 분석 로직
+## 🧠 데이터 처리 및 음성 분석
 
+본 프로젝트의 데이터 처리는 **전처리**와 **사전학습된 딥러닝 기반 STT 모델 활용**으로 나누어 진행했습니다.
+
+### 1. 데이터 전처리
+- 음성 파일(`.wav`)과 메타데이터(`.json`) 매칭
+- 사용자 연령, 성별, 지역, 주제, 녹음 환경 등 메타데이터 정리
+- 분석에 필요한 구조로 데이터프레임 구성
+- 누락 데이터 및 형식 불일치 데이터 점검
+
+### 2. 음성 인식
+- 사전학습된 **Whisper 기반 STT 모델**을 활용해 음성 데이터를 텍스트로 변환
+- 한국어 음성 데이터에 대해 STT 추론 결과를 생성
+- 변환된 텍스트를 이후 발화 분석 및 리포트 생성에 활용
+
+### 3. 발화 분석 및 활용
 - 정답 키워드 매칭
 - 카테고리 단어 사전 비교
 - 중복 단어 탐지
 - 문장 길이 분석
 - 응답 시간 측정
-- 영역별 점수 기반 추천 로직
+- 영역별 점수 기반 추천 로직 적용
+
+### 4. 정리
+- 전처리 자체는 규칙 기반 데이터 정리와 매핑 중심으로 수행
+- 딥러닝 모델을 직접 학습한 것이 아니라, **사전학습된 Whisper 모델의 추론 결과를 활용**
+- 따라서 본 프로젝트는 **딥러닝 모델 학습**보다 **딥러닝 기반 STT 활용 및 음성 분석 서비스 구현**에 가깝습니다
 
 ---
 
