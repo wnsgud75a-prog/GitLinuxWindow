@@ -1,9 +1,7 @@
-# 🧠 Token flow - Whisper 모델 기반 음성 데이터 활용 인지능력 검사 및 훈련 제공 서비스
-
 # Whisper
 
 ![Java](https://img.shields.io/badge/Java-21-007396?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-4.0.6-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-Template-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-Frontend-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-Data_Analysis-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -29,6 +27,7 @@
 - [👥 주요 사용자](#-주요-사용자)
 - [🚀 기대 효과](#-기대-효과)
 - [🛠️ 기술 스택](#️-기술-스택)
+- [⚙️ Spring Boot 초기 환경설정](#️-spring-boot-초기-환경설정)
 - [🧠 분석 로직](#-분석-로직)
 - [📁 데이터 구성](#-데이터-구성)
 - [🗂️ 개발 방법 및 전략](#️-개발-방법-및-전략)
@@ -153,6 +152,36 @@
 - **AI / STT**: Whisper STT, Hugging Face Transformers, PyTorch
 - **Data Processing**: Python, pandas, KoNLPy, Kiwi, 정규표현식
 - **Audio Handling**: Web Audio API, WAV/MP3 파일 처리
+
+---
+
+## ⚙️ Spring Boot 초기 환경설정
+
+본 프로젝트는 **Spring Initializr**를 사용하여 생성했습니다.  
+초기 생성 시 **Gradle(Kotlin DSL)**, **Java 21**, **Spring Boot 4.0.6** 환경으로 구성했으며, 패키징 방식은 `Jar`, 설정 파일 형식은 `Properties`를 사용했습니다.
+
+### 기본 설정
+- **Project**: Gradle - Kotlin
+- **Language**: Java
+- **Spring Boot**: 4.0.6
+- **Group**: `com.example`
+- **Artifact**: `final_project`
+- **Package name**: `com.example.final_project`
+- **Packaging**: Jar
+- **Configuration**: Properties
+- **Java**: 21
+
+### Dependencies
+- Spring Data JPA
+- MySQL Driver
+- MyBatis Framework
+- Spring Web
+- Spring Security
+- OAuth2 Client
+- Lombok
+- Spring Boot DevTools
+- Validation
+- Thymeleaf
 
 ---
 
