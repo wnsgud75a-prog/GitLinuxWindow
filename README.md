@@ -26,9 +26,9 @@
 
 ## 🎯 서비스 목표
 
-- [cite_start]방문요양 현장에서 별도 고정 장비나 교구 없이 스마트폰만으로 간편한 인지자극 프로그램 수행 [cite: 65, 67, 72]
-- [cite_start]주관적 관찰 대신 음성 데이터 기반의 객관적 지표를 활용하여 스크리닝 정확도 및 보고의 일관성 향상 [cite: 173, 174]
-- [cite_start]훈련 이력의 체계적 데이터 정제를 통해 치매 고위험군 조기 발견 및 돌봄 서비스 품질 개선 [cite: 175, 183, 184]
+- 방문요양 현장에서 별도 고정 장비나 교구 없이 스마트폰만으로 간편한 인지자극 프로그램 수행 [cite: 65, 67, 72]
+- 주관적 관찰 대신 음성 데이터 기반의 객관적 지표를 활용하여 스크리닝 정확도 및 보고의 일관성 향상 [cite: 173, 174]
+- 훈련 이력의 체계적 데이터 정제를 통해 치매 고위험군 조기 발견 및 돌봄 서비스 품질 개선 [cite: 175, 183, 184]
 
 ## 🚀 시작하기
 
@@ -54,14 +54,15 @@
 
 Windows에서는 아래 명령으로 실행할 수 있습니다.
 
-PowerShell
 .\gradlew.bat bootRun
 
-접속 주소Plaintexthttp://localhost:8081
+접속 주소
+
+[Plaintexthttp://localhost:8081](http://localhost:8081)
 
 
 📁 프로젝트 구조
-PlaintextTokenflow-project/
+Tokenflow-project/
 ├── src/
 │   └── main/
 │       ├── java/com/project/care/
@@ -78,20 +79,21 @@ PlaintextTokenflow-project/
 │           │   └── js/         # Web Audio API 및 API 통신 스크립트
 │           └── templates/      # Thymeleaf 뷰 템플릿
 ├── build.gradle.kts
+├── pom.xml
 └── README.md
 
 
 🗺️ 주요 페이지
 
 경로,페이지,설명
-/,수급자 관리 메인,담당 수급자 목록 조회 및 인지케어 관리   PDF
-/login,로그인,일반 세션 로그인 및 소셜 로그인 진행   PDF+ 3
-/signup,회원가입,서비스 이용을 위한 요양보호사 계정 등록   PDF+ 2
-/profile-edit,프로필 수정,"보호사 닉네임, 비밀번호 등 정보 변경   PDF+ 2"
-/test,인지능력 검사,전 영역 카테고리별 말하기 기반 상태 측정   PDF+ 2
-/training,인지능력 훈련,취약 영역 콘텐츠 선택 및 인지 자극 수행   PDF+ 2
-/report,검사결과 조회,수급자별 누적 점수 및 STT 변환 텍스트 확인   PDF+ 2
-/report/trend,기간별 변화 추이,주간·월간 단위 인지 변화율 시각화 통계 그래프   PDF+ 2
+/,수급자 관리 메인,담당 수급자 목록 조회 및 인지케어 관리
+/login,로그인,일반 세션 로그인 및 소셜 로그인 진행
+/signup,회원가입,서비스 이용을 위한 요양보호사 계정 등록
+/profile-edit,프로필 수정,"보호사 닉네임, 비밀번호 등 정보 변경"
+/test,인지능력 검사,전 영역 카테고리별 말하기 기반 상태 측정
+/training,인지능력 훈련,취약 영역 콘텐츠 선택 및 인지 자극 수행
+/report,검사결과 조회,수급자별 누적 점수 및 STT 변환 텍스트 확인
+/report/trend,기간별 변화 추이,주간·월간 단위 인지 변화율 시각화 통계 그래프
 
 
 🎯 주요 구현 내용
